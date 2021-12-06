@@ -4,19 +4,19 @@ endpoint_add_udp "0.0.0.0:30120"
 
 # Server Config
 sv_maxclients 48
-set steam_webApiKey "9576D57DD3400452BEA6BA7FB72B3117"
+set steam_webApiKey ""
 sets tags "dev, roleplay, deployer, qbcore, qb-core"
-sv_licenseKey "q1fs9lth5vljo91mqz8tvz74ajpbyovf"
+sv_licenseKey ""
 set sv_enforceGameBuild 2372
 set onesync on
-sv_hostname "[FR] [DEV] LTRP 2021"
-sets sv_projectName "[FR] [DEV] LTRP 2021"
+sv_hostname "[FR] [DEV] LTRP V2"
+sets sv_projectName "[FR] [DEV] LTRP V2"
 sets sv_projectDesc "Next version of LockTown RP."
 sets locale "fr-FR"
 load_server_icon logo.png
 
 # MYSQL Config
-set mysql_connection_string "mysql://locktownrp:Yj9QfpqSfy8PajmL@localhost/ltrpdev?charset=utf8mb4"
+set mysql_connection_string ""
 set mysql_debug "Console"
 set mysql_slow_query_warning 100
 
@@ -52,4 +52,4 @@ ensure [qtarget]
 # Add system admins
 add_ace group.admin command allow # allow all commands
 add_ace group.admin command.quit deny # but don't allow quit
-add_principal identifier.fivem:155661 group.admin #Werys
+# add_principal identifier.fivem:

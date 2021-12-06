@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CDataFileMgr__ContentsOfDataFileXml>
+	<disabledFiles />
+	<includedXmlFiles />
+	<includedDataFiles />
+	<dataFiles>
+		<Item>
+			<filename>dlc_citytrees:/%PLATFORM%/levels/gta5/citytrees.rpf</filename>
+			<fileType>RPF_FILE</fileType>
+			<overlay value="false" />
+			<disabled value="false" />
+			<persistent value="false" />
+		</Item>
+		<Item>
+			<filename>dlc_citytrees:/%PLATFORM%/levels/gta5/citytrees_metadata.rpf</filename>
+			<fileType>RPF_FILE</fileType>
+			<overlay value="false" />
+			<disabled value="false" />
+			<persistent value="false" />
+			<contents>CONTENTS_DLC_MAP_DATA</contents>
+		</Item>
+	</dataFiles>
+	<contentChangeSets>
+		<Item>
+			<changeSetName>CCS_citytrees_NG_STREAMING_MAP</changeSetName>
+			<filesToEnable>
+				<Item>dlc_citytrees:/%PLATFORM%/levels/gta5/citytrees.rpf</Item>
+				<Item>dlc_citytrees:/%PLATFORM%/levels/gta5/citytrees_metadata.rpf</Item>
+			</filesToEnable>
+			<executionConditions>
+				<activeChangesetConditions>
+				</activeChangesetConditions>
+				<genericConditions>$level=MO_JIM_L11</genericConditions>
+			</executionConditions>
+		</Item>
+	</contentChangeSets>
+	<patchFiles />
+</CDataFileMgr__ContentsOfDataFileXml>

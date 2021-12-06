@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./reset.css"/>
+        <title>QBCore Scoreboard</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="scoreboard-block">
+                <div class="scoreboard-header">
+                  <p>Info du serveur</p>
+                </div>
+                <div class="scoreboard-info">
+                    <div class="scoreboard-info-beam" data-type="storerobbery">
+                        <div class="info-beam-title">
+                            <p>Bracage de magasin</p>
+                        </div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="bankrobbery"">
+                        <div class="info-beam-title">
+                            <p>Bracage de banque</p>
+                        </div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="jewellery">
+                        <div class="info-beam-title">
+                            <p>Vol de bijoux</p>
+                        </div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" data-type="pacific">
+                        <div class="info-beam-title">
+                            <p>Banque Pacific</p>
+                        </div>
+                        <div class="info-beam-status"></div>
+                    </div>
+                    <div class="scoreboard-info-beam" style="background: #dc143c">
+                        <div class="info-beam-title-players">
+                            <p>Nombre de joueurs</p>
+                        </div>
+                        <div class="info-beam-status" id="total-players" style="color: #ededed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Docsify Style-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+
+    <!--Default metas-->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta content="QBCore Documentation Website" name="description">
+
+  <!--Title and flaticon-->
+  <link rel="Icon" type="image/png" href="./img/logo.png"/>
+  <title>QBCore Documentation</title>
+
+  <!--Discord Embed-->
+  <meta content="QBCore Framework" property="og:title">
+  <meta content="Official Framework Documentation" property="og:description">
+  <meta content="https://bombayv.github.io/qbcore.github.io/" property="og:url">
+  <meta content="#dc143c" data-react-helmet="true" name="theme-color">
+
+  <!--Image Embed-->
+  <meta property="og:image" content="https://i.file.glass/g5iea.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="128"/>
+  <meta property="og:image:height" content="128"/>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 0.8vh;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 0px;
+      background-color: #555;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #dc143c;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #dc143c;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading page...</div>
+  <script>
+      window.$docsify = {
+        el: '#app',
+        auto2top: true,
+        loadSidebar: true,
+        coverpage: true,
+        homepage: 'about.md',
+        notFoundPage: '404.md',
+        repo: 'https://github.com/BombayV/qbcore.github.io',
+        title: 'QBCore',
+        name: 'QBCore Documentation',
+        nameLink: '#/about.md',
+        themeColor: '#dc143c',
+        search: {
+          maxAge: 86400000,
+          paths: 'auto',
+          placeholder: 'Looking for something?',
+        },
+        copyCode: {
+          buttonText : 'Copy to clipboard',
+          errorText  : 'Error',
+          successText: 'Copied code'
+        },
+        plugins: [
+          function(hook) {
+            var footer = [
+              '<hr/>',
+              '<footer class="container">',
+              '<span>Made with ❤️ by <a href="https://github.com/BombayV">Bombay#9032</a></span>',
+              '<span> Copyright &copy; 2021</span>',
+              '</footer>'
+            ].join('');
+
+            hook.afterEach(function(html) {
+              return html + footer;
+            });
+          }
+        ]
+      }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" data-ga="UA-178023647-2"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//polyfill.io/v3/polyfill.min.js?features=String.prototype.normalize"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+</body>
+</html>

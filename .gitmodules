@@ -1,9 +1,3 @@
-[submodule "resources/[qb]/qb-dispenser"]
+[submodule "dispenser"]
 	path = resources/[qb]/qb-dispenser
 	url = git@github.com:madstersogoo/qb-dispenser.git
-[submodule "resources/[qb]/qb-quest"]
-	path = resources/[qb]/qb-quest
-	url = git@github.com:madstersogoo/qb-quest.git
-[submodule "resources/[qb]/qb-SpawnPed"]
-	path = resources/[qb]/qb-SpawnPed
-	url = git@github.com:madstersogoo/qb-SpawnPed.git

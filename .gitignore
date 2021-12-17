@@ -604,6 +604,3 @@ server.cfg.bkp
 resources/\[standalone\]/ghmattimysql/config.json
 resources/\[qb\]/qb-bossmenu/accounts.json
 resources/\[qb\]/qb\-bossmenu/accounts.json
-resources/\[qb\]/qb\-dispenser
-resources/\[qb\]/qb\-quest
-resources/\[qb\]/qb\-SpawnPed
